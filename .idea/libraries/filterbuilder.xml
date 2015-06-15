@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="filterbuilder">
+    <CLASSES>
+      <root url="jar://E:/java lib/htmlparser1_6/lib/filterbuilder.jar!/" />
+      <root url="jar://E:/java lib/htmlparser1_6/lib/htmllexer.jar!/" />
+      <root url="jar://E:/java lib/htmlparser1_6/lib/htmlparser.jar!/" />
+      <root url="jar://E:/java lib/htmlparser1_6/lib/junit.jar!/" />
+      <root url="jar://E:/java lib/htmlparser1_6/lib/sax2.jar!/" />
+      <root url="jar://E:/java lib/htmlparser1_6/lib/thumbelina.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
