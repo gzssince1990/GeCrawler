@@ -7,7 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="commons-codec-1.9" level="project" />
-    <orderEntry type="library" name="filterbuilder" level="project" />
+    <orderEntry type="library" name="htmlparser1_6" level="project" />
+    <orderEntry type="library" name="httpcomponents-client-4.5" level="project" />
   </component>
 </module>

@@ -18,6 +18,7 @@ import java.net.UnknownHostException;
 
 /**
  * Created by Ge on 2015/6/13.
+ * Crawler's download functions.
  */
 public class DownloadTool {
     /**
@@ -25,15 +26,17 @@ public class DownloadTool {
      * get rid of invalid characters
      */
     private String getFileNameByUrl(String url, String contentType){
+        String fileName;
         //get rid of http://
-        url = url.replace("http://","");
-        //replace those wired char by '_'
-        url = contentType.indexOf("html") != -1 ?
-                url.replaceAll("[\\?/:*|<>\"]", "_") + ".html"
-                : url.replaceAll("[\\?/:*|<>\"]", "_") + "."
+        fileName = url.replace("http://","");
+        //replace those invalid char with '_'
+        fileName = contentType.contains("html") ?
+                fileName.replaceAll("[\\?/:*|<>\"]", "_") + ".html"
+                : fileName.replaceAll("[\\?/:*|<>\"]", "_") + "."
                 + contentType.substring(contentType.lastIndexOf("/") + 1);
-        return url;
+        return fileName;
     }
+
     /**
      * download from url
      * Save to file
@@ -56,13 +59,11 @@ public class DownloadTool {
                 if (i >= 5) return false;
                 if (e instanceof InterruptedIOException) return false;
                 if (e instanceof UnknownHostException) return false;
-                if (e instanceof ConnectTimeoutException) return false;
+                //if (e instanceof ConnectTimeoutException) return false;
                 if (e instanceof SSLException) return false;
                 HttpClientContext clientContext = HttpClientContext.adapt(httpContext);
                 HttpRequest request = clientContext.getRequest();
-                boolean idempotent = !(request instanceof HttpEntityEnclosingRequest);
-                if (idempotent) return true;
-                return false;
+                return !(request instanceof HttpEntityEnclosingRequest);
             }
         };
 
@@ -88,8 +89,14 @@ public class DownloadTool {
             File dir = new File(dirStr);
             File file = new File(dirStr,filename);
             //create dir if it does not exist; delete file if it exists
-            if (!dir.exists()) dir.mkdir();
-            else if (file.exists()) file.delete();
+            if (!dir.exists()) {
+                if (!dir.mkdir()) {
+                    System.err.println("Failed to create the new directory!!");
+                    System.exit(1);
+                }
+            } else if (file.exists())
+                if (!file.delete())
+                    System.err.print("Failed to delete the existing file!!");
             //create output stream for file an write the content in the entity into it
             OutputStream output = new FileOutputStream(file);
             entity.writeTo(output);

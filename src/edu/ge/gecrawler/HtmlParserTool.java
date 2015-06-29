@@ -14,13 +14,23 @@ import java.util.Set;
 
 /**
  * Created by Ge on 2015/6/14.
+ * Simply analyze the downloaded pages and retrieve new url.
  */
 public class HtmlParserTool {
 
+    /**
+     * inner interface for deciding which url to accept.
+     */
     public interface LinkFilter{
         boolean accept(String url);
     }
 
+    /**
+     *
+     * @param urlStr analyze content in this url
+     * @param filter filter object which implemented the LinkFilter interface
+     * @return Links in the url
+     */
     public static Set<String> extractLinks(String urlStr,LinkFilter  filter){
         Set<String> links = new HashSet<String>();
 
@@ -32,7 +42,7 @@ public class HtmlParserTool {
                 private static final long serialVersionUID = 1L;
                 @Override
                 public boolean accept(Node node) {
-                    return node.getText().startsWith("frame src=") ? true : false;
+                    return node.getText().startsWith("frame src=");
                 }
             };
 

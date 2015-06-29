@@ -1,11 +1,10 @@
 package edu.ge.gecrawler;
 
-import edu.ge.gecrawler.CrawlerQueue;
-
 import java.util.Set;
 
 /**
  * Created by Ge on 2015/6/14.
+ * The Crawler
  */
 public class GeCrawler {
 
@@ -16,9 +15,16 @@ public class GeCrawler {
     }
 
     private void init(String[] seeds){
-        for (int i = 0; i < seeds.length; i++) crawlerQueue.addNewUrl(seeds[i]);
+        for (String seed : seeds) crawlerQueue.addNewUrl(seed);
     }
 
+    /**
+     *
+     * @param seeds Start from those urls
+     * @param dirStr Save downloaded pages in this dir
+     * @param filterStr Limitation to keep crawler safely
+     * @param limitedNum Max download number of pages
+     */
     public void crawl(String[] seeds, String dirStr,final String filterStr, int limitedNum){
         //Implement LinkFilter
         HtmlParserTool.LinkFilter filter = new HtmlParserTool.LinkFilter() {
@@ -30,10 +36,10 @@ public class GeCrawler {
         //Initial the crawler queue
         init(seeds);
         //When visit plan in crawler queue is empty or when we get enough pages, stop!
-        while (!crawlerQueue.isToVisitListEmpty()
-                && crawlerQueue.getVisitedUrlNum() <= limitedNum){
+        while (!crawlerQueue.isUnvisitedListEmpty()
+                && crawlerQueue.sizeOfVisitedUrl() <= limitedNum){
             //Get next url to visit
-            String visitUrl = crawlerQueue.next();
+            String visitUrl = crawlerQueue.nextUnvisitedUrl();
             //Url is null, go to next loop
             if (visitUrl == null) continue;
             //Download pages;
