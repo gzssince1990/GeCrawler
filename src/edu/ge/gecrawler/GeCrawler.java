@@ -26,6 +26,7 @@ public class GeCrawler {
      * @param limitedNum Max download number of pages
      */
     public void crawl(String[] seeds, String dirStr,final String filterStr, int limitedNum){
+
         //Implement LinkFilter
         HtmlParserTool.LinkFilter filter = new HtmlParserTool.LinkFilter() {
             @Override
@@ -42,16 +43,22 @@ public class GeCrawler {
             String visitUrl = crawlerQueue.nextUnvisitedUrl();
             //Url is null, go to next loop
             if (visitUrl == null) continue;
-            //Download pages;
-            DownloadTool downloader = new DownloadTool();
-            downloader.downloadFile(visitUrl,dirStr);
+
 
             //Mark visited
             crawlerQueue.addVisitedUrl(visitUrl);
 
-            //Extract new links from this link
-            Set<String> links = HtmlParserTool.extractLinks(visitUrl, filter);
-            for (String link : links) crawlerQueue.addNewUrl(link);
+            //Download pages;
+            DownloadTool downloader = new DownloadTool();
+            if(downloader.downloadFile(visitUrl, dirStr) != null){
+                if (visitUrl.endsWith("pdf")){
+                    System.err.println("WARNING: URL " + visitUrl + " does not contain text");
+                    continue;
+                }
+                //Extract new links from this link
+                Set<String> links = HtmlParserTool.extractLinks(visitUrl, filter);
+                for (String link : links) crawlerQueue.addNewUrl(link);
+            }
         }
     }
 }

@@ -24,6 +24,7 @@ public class DownloadTool {
     /**
      * Get a formal file name by url
      * get rid of invalid characters
+     * bug: what char to escape;            .pdf.pdf
      */
     private String getFileNameByUrl(String url, String contentType){
         String fileName;
@@ -59,7 +60,7 @@ public class DownloadTool {
                 if (i >= 5) return false;
                 if (e instanceof InterruptedIOException) return false;
                 if (e instanceof UnknownHostException) return false;
-                //if (e instanceof ConnectTimeoutException) return false;
+                if (e instanceof ConnectTimeoutException) return false;
                 if (e instanceof SSLException) return false;
                 HttpClientContext clientContext = HttpClientContext.adapt(httpContext);
                 HttpRequest request = clientContext.getRequest();
@@ -79,8 +80,10 @@ public class DownloadTool {
             int statusCode = response.getStatusLine().getStatusCode();
 
             //handler accident
-            if (statusCode != HttpStatus.SC_OK)
+            if (statusCode != HttpStatus.SC_OK) {
                 System.err.println("Method failed: " + response.getStatusLine());
+                return null;
+            }
             //get entity of get method
             HttpEntity entity = response.getEntity();
             //get the file name from the url

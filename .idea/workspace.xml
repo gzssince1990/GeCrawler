@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31ff3710-ae59-47c4-96ab-12911188d703" name="Default" comment="Last version before submit to Professor Herbert.&#10;Basically organized code again to make it cleaner and tidier.&#10;More citation and less useless lines.">
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\.idea\libraries\commons_codec_1_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\.idea\libraries\filterbuilder.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\.idea\libraries\org_apache_lib.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\out\production\WebCrawlerTest\Crawler.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\out\production\WebCrawlerTest\Downloader.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\out\production\WebCrawlerTest\FileRW.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\out\production\WebCrawlerTest\Zhihu.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\src\Crawler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\src\Downloader.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\src\FileRW.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\yuanda\IdeaProjects\WebCrawlerTest\src\Zhihu.java" afterPath="" />
+    <list default="true" id="31ff3710-ae59-47c4-96ab-12911188d703" name="Default" comment="First version After submitting to Professor Herbert.&#10;Don't download if url is 404 Not Found&#10;Don't extract if url is pdf file&#10;/**&#10;  *TODO&#10;  *debug .pdf.pdf problem&#10;  *add multithreading module&#10;  *politely hiking&#10;  */">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/CrawlerQueue.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/CrawlerQueue.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/DownloadTool$1.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/DownloadTool$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/DownloadTool$2.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/DownloadTool$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/DownloadTool.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/DownloadTool.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/GeCrawler$1.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/GeCrawler$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/GeCrawler.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/GeCrawler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/HtmlParserTool$1.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/HtmlParserTool$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/HtmlParserTool.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/HtmlParserTool.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/Main.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ge/gecrawler/CrawlerQueue.java" afterPath="$PROJECT_DIR$/src/edu/ge/gecrawler/CrawlerQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/MyQueue.class" afterPath="$PROJECT_DIR$/out/production/WebCrawlerTest/edu/ge/gecrawler/MyQueue.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java" afterPath="$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java" afterPath="$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java" afterPath="$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ge/gecrawler/Main.java" afterPath="$PROJECT_DIR$/src/edu/ge/gecrawler/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/ge/gecrawler/MyQueue.java" afterPath="$PROJECT_DIR$/src/edu/ge/gecrawler/MyQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebCrawlerTest.iml" afterPath="$PROJECT_DIR$/WebCrawlerTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WebCrawlerTest.iws" />
@@ -50,24 +41,23 @@
         <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-              <folding>
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#343#344#0" expanded="true" />
-              </folding>
+              <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HtmlParserTool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java">
+      <file leaf-file-name="DownloadTool.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.33267716">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
               <folding>
-                <element signature="e#952#960#0" expanded="true" />
-                <element signature="e#1107#1367#0" expanded="true" />
-                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1607#1955#0" expanded="true" />
+                <element signature="e#1954#1955#0" expanded="true" />
+                <element signature="e#2058#2766#0" expanded="true" />
+                <element signature="e#2765#2766#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,20 +67,43 @@
         <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DownloadTool.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java">
+      <file leaf-file-name="HtmlParserTool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6692913">
-              <caret line="65" column="72" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="72" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
-                <element signature="e#2005#2715#0" expanded="true" />
-                <element signature="e#2714#2715#0" expanded="true" />
+                <element signature="e#952#960#0" expanded="true" />
+                <element signature="e#1107#1367#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/MyQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrawlerQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/CrawlerQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,9 +143,9 @@
         <option value="$PROJECT_DIR$/src/DownloadTool.java" />
         <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/MyQueue.java" />
         <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/CrawlerQueue.java" />
-        <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java" />
         <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java" />
         <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/Main.java" />
+        <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java" />
         <option value="$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java" />
       </list>
     </option>
@@ -176,6 +189,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +233,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -467,6 +480,13 @@
       <option name="number" value="Default" />
       <updated>1434167270841</updated>
     </task>
+    <task id="LOCAL-00001" summary="Last version before submit to Professor Herbert.&#10;Basically organized code again to make it cleaner and tidier.&#10;More citation and less useless lines.">
+      <created>1435555200456</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1435555200456</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -481,7 +501,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22069694" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2439282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41710666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -489,7 +509,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26821542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -538,10 +558,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Last version before submit to Professor Herbert.&#10;Basically organized code again to make it cleaner and tidier.&#10;More citation and less useless lines." />
-    <option name="LAST_COMMIT_MESSAGE" value="Last version before submit to Professor Herbert.&#10;Basically organized code again to make it cleaner and tidier.&#10;More citation and less useless lines." />
+    <MESSAGE value="First version After submitting to Professor Herbert.&#10;Don't download if url is 404 Not Found&#10;Don't extract if url is pdf file&#10;/**&#10;  *TODO&#10;  *debug .pdf.pdf problem&#10;  *add multithreading module&#10;  *politely hiking&#10;  */" />
+    <option name="LAST_COMMIT_MESSAGE" value="First version After submitting to Professor Herbert.&#10;Don't download if url is 404 Not Found&#10;Don't extract if url is pdf file&#10;/**&#10;  *TODO&#10;  *debug .pdf.pdf problem&#10;  *add multithreading module&#10;  *politely hiking&#10;  */" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="32" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -549,33 +583,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/MyQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
-          <folding>
-            <element signature="e#2005#2715#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,7 +597,6 @@
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#283#291#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,8 +634,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="101" column="24" selection-start-line="101" selection-start-column="24" selection-end-line="101" selection-end-column="24" />
           <folding>
-            <element signature="e#2005#2715#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1607#1955#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#2058#2766#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,10 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +657,6 @@
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#283#291#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -684,8 +694,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="89" column="71" selection-start-line="89" selection-start-column="71" selection-end-line="89" selection-end-column="71" />
           <folding>
-            <element signature="e#2005#2715#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1607#1955#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#2058#2766#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -694,10 +707,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -713,10 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -871,13 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="110" column="19" selection-start-line="110" selection-start-column="19" selection-end-line="110" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/sun/net/www/http/HttpClient.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.905">
@@ -922,38 +922,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/MyQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12179487">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/CrawlerQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52644837">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#283#291#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33283132">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65468407">
+          <caret line="664" column="61" selection-start-line="664" selection-start-column="61" selection-end-line="664" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/sun/security/provider/SHA2.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78988767">
+          <caret line="92" column="25" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+          <folding>
+            <element signature="e#2760#2761#0" expanded="true" />
+            <element signature="e#2829#2830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-          </folding>
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/HtmlParserTool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="67" selection-start-line="44" selection-start-column="67" selection-end-line="44" selection-end-column="67" />
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
           <folding>
             <element signature="e#952#960#0" expanded="true" />
             <element signature="e#1107#1367#0" expanded="true" />
@@ -962,21 +984,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/GeCrawler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="59" column="71" selection-start-line="59" selection-start-column="71" selection-end-line="59" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/ge/gecrawler/DownloadTool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6692913">
-          <caret line="65" column="72" selection-start-line="65" selection-start-column="72" selection-end-line="65" selection-end-column="72" />
+        <state vertical-scroll-proportion="0.33267716">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
           <folding>
-            <element signature="e#2005#2715#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1607#1955#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#2058#2766#0" expanded="true" />
+            <element signature="e#2765#2766#0" expanded="true" />
           </folding>
         </state>
       </provider>
