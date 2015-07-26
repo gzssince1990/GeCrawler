@@ -22,9 +22,33 @@ public class CrawlerQueue {
     public String nextUnvisitedUrl() {return unvisitedList.deQueue();}
     public void addNewUrl(String url){
         if (url != null && !(url = url.trim()).equals("") && !visitedUrl.contains(url)
-                && !unvisitedList.contains(url))
+                && !unvisitedList.contains(url)){
             unvisitedList.enQueue(url);
+            addToDownloadUrl(url);
+        }
     }
     public boolean isUnvisitedListEmpty() {return unvisitedList.isEmpty();}
+
+    //To download
+    private MyQueue<String> toDownloadList = new MyQueue<String>();
+
+    public String nextToDownloadUrl(){
+        return toDownloadList.deQueue();
+    }
+    public void addToDownloadUrl(String url){
+        toDownloadList.enQueue(url);
+    }
+    public boolean isToDownloadListEmpty(){
+        return toDownloadList.isEmpty();
+    }
+    public int sizeOfToDownloadUrl(){
+        return toDownloadList.size();
+    }
+
+    //Downloaded
+    private Set<String> downloadedUrl = new HashSet<String>();
+
+    public void addDownloadedUrl(String url) {downloadedUrl.add(url);}
+    public int sizeOfDownloadedUrl() {return downloadedUrl.size();}
 
 }

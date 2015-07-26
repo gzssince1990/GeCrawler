@@ -8,7 +8,8 @@ public class Main {
     public static void main(String[] args) {
 
         GeCrawler geCrawler = new GeCrawler();
-        geCrawler.crawl(new String[]{"http://cs.montclair.edu"},"E:/CrawlerTest3","http://cs.montclair.edu",100000);
+        //geCrawler.crawl(new String[]{"http://cs.montclair.edu"},"E:/CrawlerTest4","http://cs.montclair.edu",100);
+        geCrawler.crawl(new String[]{"http://www.genkit.net"},"E:/CrawlerTest4","http://www.genkit.net",10);
 
         //String pdfStr = "adfafsdfasf.pdf";
 
